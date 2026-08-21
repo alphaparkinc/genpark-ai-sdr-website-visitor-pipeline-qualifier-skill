@@ -1,0 +1,35 @@
+{
+  "name": "genpark-ai-sdr-website-visitor-pipeline-qualifier-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI SDR agent that de-anonymizes website visitors, scores pipeline fit, and auto-triggers personalized outreach sequences.",
+  "author": "genpark",
+  "category": "sales",
+  "tags": [
+    "ai-sdr",
+    "pipeline-qualification",
+    "visitor-intent",
+    "personalized-outreach",
+    "clara-ai"
+  ],
+  "inputs": {
+    "visitor_company_domain": {
+      "type": "string"
+    },
+    "page_visited": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "identified_company": {
+      "type": "object"
+    },
+    "pipeline_fit_score": {
+      "type": "number"
+    },
+    "outreach_sequence_triggered": {
+      "type": "object"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
